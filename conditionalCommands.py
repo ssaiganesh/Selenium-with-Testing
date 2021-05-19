@@ -29,5 +29,21 @@ is_selected is the method used to verify if the web element is selected or not
 predominantly used with radio buttons, dropdowns, and checkboxes
 """
 
+"""
+user_ele = driver.find_element_by_name("username")
+print(user_ele.is_displayed())
+print(user_ele.is_enabled())
 
+pwd_ele = driver.find_element_by_name("password")
+print(user_ele.is_displayed())
+print(pwd_ele.is_enabled())
+
+user_ele.send_keys("mercury")
+pwd_ele.send_keys("mercury")
+
+driver.find_element_by_name("login").click()
+
+roundtrip_radio = driver.find_element_by_css_selector("input[value=roundtrip]")
+print(roundtrip_radio.is_selected())
+"""
 
